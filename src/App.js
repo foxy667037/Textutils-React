@@ -90,8 +90,8 @@ function App(props) {
     <Navbar title="TextUitils" about="About Us" mode={mode} colorMode={colorMode} toggleMode={toggleMode}/>
     <Alert alert={alert}/>
         <Routes> 
-            <Route exact path='/about' element={<About mode={mode} colorMode={colorMode}/>}/>
-            <Route exact path='/Textutils-React' element={<Textform heading="Enter Your Text Below...." placeholder="Enter here" colorMode={colorMode} mode= {mode} showAlert={showAlert}/>}/>
+            <Route path='/about' element={<About mode={mode} colorMode={colorMode}/>}/>
+            <Route path='/' element={<Textform heading="Enter Your Text Below...." placeholder="Enter here" colorMode={colorMode} mode= {mode} showAlert={showAlert}/>}/>
         </Routes>
     </BrowserRouter>
   </>
